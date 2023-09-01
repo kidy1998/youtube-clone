@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.head {
+
+    height: 100px;
+    display: flex;
+    
+}
+
+.logo {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-logo {
+    width: auto;
+    height: 80px;   
+}
+
+.search {
+
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#query {
+    flex-basis: 50%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+#search-btn, #mike-btn {
+    height: 50px;
+    flex-basis: 5%;
+    border: 1px solid gray;
+    border-radius: 10%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.myinfo {
+    flex-basis: 15%;
+    display: flex;
+}
+
+.myinfo > :first-child {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.myinfo > :last-child {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ====================================================mid */
+
+
+.mid{
+
+    display: flex;
+    min-height: 100vh; /* 화면 전체 높이에 대한 최소 높이 설정 */
+}
+
+.main {
+
+    justify-content: center;
+    align-items: center;   
+    display: flex;
+    flex-direction: column;
+}
+
+.content iframe {
+    max-width: 100%;
+}
+
+
+.info {
+
+    width: 1271px;
+    height: 100px;
+    display: flex;
+    align-items: center ;
+   
+    border-radius:  5px;
+}
+
+#like, #hate, #share, #save {
+
+    height: 50px;
+    flex-basis: 8%;
+    transform: translateX(500px);
+    margin-right: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.comment-list {
+    list-style: none;
+}
+
+.img-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.img-wrapper > img {
+    height: 100%;
+    width: 100%;
+}
+
+.comment-content {
+
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 1271px;
+    
+}
+
+/* ================================================recommend */
+
+.recommend {
+    list-style: none;
+}
+
+.recommend-content {
+
+    width: 400px;
+    height: 120px;
+   
+    border-radius: 15px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center
+    
+}
+
+
+.img-wrapper-square {
+    
+    flex-basis: 50%;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 15px 0px 0px 15px ;
+    
+}
+
+.img-wrapper-square img {
+
+    height: 100%;
+    width: 100%;
+   
+}
+
+.recommend-title {
+
+    flex-basis: 50%;
+    text-align: left;
+    margin-left: 2px;
+}
+
+a {
+    text-decoration-line: none;
+    color:black;
+}
+
+
+@media all and (max-width:767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    
+
+}
